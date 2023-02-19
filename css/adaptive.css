@@ -1,0 +1,129 @@
+
+@media (max-width:776px) {
+    .burger{
+        display: block;
+    }
+    .logo{
+        max-width: 19.0625rem;
+        width: 100%;
+       
+    }
+    .nav__list{
+        flex-direction: column;
+        align-items: start;
+        padding-top: 200px;
+        padding-left: 50px;
+        position: absolute;
+        background-color: black;
+        left: -1000px;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+        z-index: 2;
+    }
+    .nav__list.active{
+        position: fixed;
+        overflow: auto;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: all .5s ease-in-out;
+        height: 100%;
+    }
+    .nav__list-item{
+        font-size: 1.575rem;
+        text-transform: uppercase;
+    }
+    .nav__list-item:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 55px;
+    }
+
+    .hero{
+        height: 70vh;
+        padding-top: 200px;
+    }
+    .hero__inner{
+        max-width: 20.625rem;
+        width: 100%;
+        border: 2px solid #ffff;
+        padding: 20px 20px 20px 43px;
+    }
+    .hero__title{
+        max-width: 10.625rem;
+        font-size: 2rem;
+    }
+    .leader {
+        padding-top: 77px;
+    }
+    .leader__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .leader__text{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .leader__text-title{
+        font-size: 2rem;
+    }
+    .our {
+        padding: 100px 0;
+    }
+    .our__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__inner{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .footer__logo{
+        text-align:left;
+    }
+    .footer__nav-list{
+        flex-direction: column;
+    }
+    .footer__nav-item:not(:last-child){
+        margin-bottom: 20px;
+        margin-right:0px;
+    }
+    .footer__inner-left{
+        align-items: center;
+    }
+    .footer__inner-right{
+        margin-top:  20px;
+        align-items: center;
+    }
+}
+@media (max-width:555px){
+    .logo{
+        width: 205px;
+    }
+    .our__list{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+    .our__list-item-img{
+        object-fit:cover;
+        object-position: top;
+    }
+    .our__list-item-descr{
+        font-size: 2rem;
+        left: 10px;
+        bottom: 70px;
+    }
+    .out__wrapper{
+        text-align:center;
+    }
+    .our__inner{
+        align-items: center;
+        justify-content: center;
+    }
+    .our__link-btn{
+        display: inline-flex;
+        margin-top: 20px;
+    }
+}
